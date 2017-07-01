@@ -1,0 +1,6 @@
+use_frameworks!
+target 'SwiftDevTools_Tests' do
+  pod 'SwiftDevTools', :path => '../'
+  
+  
+end
