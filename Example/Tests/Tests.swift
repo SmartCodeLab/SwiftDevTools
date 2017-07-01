@@ -17,6 +17,8 @@ class Tests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
+        let p1 : Double = 3.1415926
+        print(p1)
     }
     
     func testPerformanceExample() {

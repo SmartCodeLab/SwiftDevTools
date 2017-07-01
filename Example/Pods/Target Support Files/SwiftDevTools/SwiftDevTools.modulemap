@@ -1,0 +1,6 @@
+framework module SwiftDevTools {
+  umbrella header "SwiftDevTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

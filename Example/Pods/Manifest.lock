@@ -1,0 +1,16 @@
+PODS:
+  - SwiftDevTools (0.0.1)
+
+DEPENDENCIES:
+  - SwiftDevTools (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftDevTools:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwiftDevTools: 2a67e7914227e8433308dffa707485f0764e9302
+
+PODFILE CHECKSUM: 8487c241c5f96c2a99fc019f06d05f48e75fac1b
+
+COCOAPODS: 1.2.1

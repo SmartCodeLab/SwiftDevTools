@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C8F024D1F07DD2200D5CDFB /* SwiftDevTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8F024C1F07DD2200D5CDFB /* SwiftDevTools.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		91786D85027CB3E0397DDAFA /* Pods_SwiftDevTools_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1622727CA2F449FD9684C522 /* Pods_SwiftDevTools_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03AB157F082F5C1112DE6183 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		03AB157F082F5C1112DE6183 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1622727CA2F449FD9684C522 /* Pods_SwiftDevTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDevTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CF6BA38C5CB9847A61D2F10 /* SwiftDevTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftDevTools.podspec; path = ../SwiftDevTools.podspec; sourceTree = "<group>"; };
+		2C8F024C1F07DD2200D5CDFB /* SwiftDevTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDevTools.framework; path = "../../../Library/Developer/Xcode/DerivedData/SwiftDevTools-cgmkqmurzfydcceueivxrgkqlspv/Build/Products/Debug-iphonesimulator/SwiftDevTools/SwiftDevTools.framework"; sourceTree = "<group>"; };
+		5CF6BA38C5CB9847A61D2F10 /* SwiftDevTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftDevTools.podspec; path = ../SwiftDevTools.podspec; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SwiftDevTools_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDevTools_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7EC551333635BC55114F3B88 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7EC551333635BC55114F3B88 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DAB4F2AB77C46E80D8442E62 /* Pods-SwiftDevTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDevTools_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDevTools_Tests/Pods-SwiftDevTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E0B348414D5BED14476675C5 /* Pods-SwiftDevTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDevTools_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDevTools_Tests/Pods-SwiftDevTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -28,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8F024D1F07DD2200D5CDFB /* SwiftDevTools.framework in Frameworks */,
 				91786D85027CB3E0397DDAFA /* Pods_SwiftDevTools_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +96,7 @@
 		E257E79CD81614DABF80D4F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C8F024C1F07DD2200D5CDFB /* SwiftDevTools.framework */,
 				1622727CA2F449FD9684C522 /* Pods_SwiftDevTools_Tests.framework */,
 			);
 			name = Frameworks;
@@ -131,12 +135,9 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = S7S7572BYN;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -321,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0B348414D5BED14476675C5 /* Pods-SwiftDevTools_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = S7S7572BYN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -341,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DAB4F2AB77C46E80D8442E62 /* Pods-SwiftDevTools_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = S7S7572BYN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
