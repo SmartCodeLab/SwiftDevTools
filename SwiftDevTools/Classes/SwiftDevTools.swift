@@ -5,6 +5,8 @@
 //  Created by FengJerry on 17/7/1.
 //
 
+import Foundation
+
 extension Double{
     
     /*
