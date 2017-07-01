@@ -5,9 +5,7 @@
 //  Created by FengJerry on 17/7/1.
 //
 
-import Foundation
-
-extension Double{
+public extension Double{
     
     /*
      *  四舍五入保留Double小数点位数
@@ -17,7 +15,7 @@ extension Double{
     }
 }
 
-extension Float{
+public extension Float{
     
     /*
      *  四舍五入保留Float小数点位数

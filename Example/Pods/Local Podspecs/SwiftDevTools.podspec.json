@@ -1,6 +1,6 @@
 {
   "name": "SwiftDevTools",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "A short description of SwiftDevTools.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/SmartCodeLab/SwiftDevTools",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/SmartCodeLab/SwiftDevTools.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SwiftDevTools/Classes/**/*",
+  "source_files": "SwiftDevTools/Classes/*.swift",
   "frameworks": [
     "Foundation",
     "StoreKit"

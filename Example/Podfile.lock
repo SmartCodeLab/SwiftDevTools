@@ -1,5 +1,5 @@
 PODS:
-  - SwiftDevTools (0.0.1)
+  - SwiftDevTools (0.0.2)
 
 DEPENDENCIES:
   - SwiftDevTools (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SwiftDevTools: 2a67e7914227e8433308dffa707485f0764e9302
+  SwiftDevTools: 4fa0380016ba0c5ce03c312d99ed1b411d8c1faa
 
 PODFILE CHECKSUM: 8487c241c5f96c2a99fc019f06d05f48e75fac1b
 

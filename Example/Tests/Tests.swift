@@ -19,6 +19,7 @@ class Tests: XCTestCase {
         XCTAssert(true, "Pass")
         let p1 : Double = 3.1415926
         print(p1)
+        print(p1.format(f: ".3"))
     }
     
     func testPerformanceExample() {
