@@ -52,15 +52,23 @@ public extension String{
     /*
      * 字符串截取
      */
-    func subString(beignIndex : Int) -> String {
-        let index = self.index(self.startIndex, offsetBy: beignIndex)
+    func subString(beginIndex : Int) throws -> String {
+        if (beginIndex > 0 && beginIndex >= self.length())||(beginIndex < 0 && beginIndex < -self.length()){
+            print("SwiftDevTools : error : IndexOutOfBoundsException")
+            throw SDTError.IndexOutOfBoundsException
+        }
+        let index = self.index(self.startIndex, offsetBy: beginIndex)
         return self.substring(from: index)
     }
     
     /*
      * 字符串截取
      */
-    func subString(endIndex : Int) -> String {
+    func subString(endIndex : Int) throws -> String {
+        if (endIndex > 0 && endIndex >= self.length())||(endIndex < 0 && endIndex < -self.length()){
+            print("SwiftDevTools : error : IndexOutOfBoundsException")
+            throw SDTError.IndexOutOfBoundsException
+        }
         let index = self.index(self.endIndex, offsetBy: endIndex)
         return self.substring(to: index)
     }
@@ -68,7 +76,15 @@ public extension String{
     /*
      * 字符串截取[beginIndex,endIndex)
      */
-    func subString(beginIndex : Int, endIndex : Int) -> String {
+    func subString(beginIndex : Int, endIndex : Int) throws -> String {
+        if (beginIndex > 0 && beginIndex >= self.length())||(beginIndex < 0 && beginIndex < -self.length()){
+            print("SwiftDevTools : error : IndexOutOfBoundsException")
+            throw SDTError.IndexOutOfBoundsException
+        }
+        if (endIndex > 0 && endIndex >= self.length())||(endIndex < 0 && endIndex < self.length()){
+            print("SwiftDevTools : error : IndexOutOfBoundsException")
+            throw SDTError.IndexOutOfBoundsException
+        }
         let begin = self.index(self.startIndex, offsetBy: beginIndex)
         let end = self.index(self.startIndex, offsetBy: endIndex)
         let range : Range = begin..<end
