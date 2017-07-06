@@ -173,7 +173,7 @@ public extension String{
     
 }
 
-extension UIColor {
+public extension UIColor {
     
     /// 用十六进制颜色创建UIColor
     /// - Parameter hexColor: 十六进制颜色 (0F0F0F)
@@ -191,4 +191,16 @@ extension UIColor {
         
         self.init(red: CGFloat(red)/255.0, green: CGFloat(green)/255.0, blue: CGFloat(blue)/255.0, alpha: 1.0)
     }
+}
+
+public func isValidPhoneNumber(phoneNumber : String) -> Bool {
+    let regex = "1[0-9]{10}"
+    let predicate = NSPredicate.init(format: "SELF MATCHES %@", regex)
+    return predicate.evaluate(with: phoneNumber)
+}
+
+public func isValidEmail(email : String) -> Bool {
+    let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+    let predicate = NSPredicate.init(format: "SELF MATCHES %@", regex)
+    return predicate.evaluate(with: email)
 }
