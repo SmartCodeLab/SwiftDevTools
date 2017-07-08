@@ -174,19 +174,19 @@ public extension String{
     /*
      * 对字符串进行扩展，增加是否是有效手机号方法
      */
-    public func isValidPhoneNumber(phoneNumber : String) -> Bool {
+    public func isValidPhoneNumber() -> Bool {
         let regex = "1[0-9]{10}"
         let predicate = NSPredicate.init(format: "SELF MATCHES %@", regex)
-        return predicate.evaluate(with: phoneNumber)
+        return predicate.evaluate(with: self)
     }
     
     /*
      * 对字符串进行扩展，增加是否是有效邮箱方法
      */
-    public func isValidEmail(email : String) -> Bool {
+    public func isValidEmail() -> Bool {
         let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
         let predicate = NSPredicate.init(format: "SELF MATCHES %@", regex)
-        return predicate.evaluate(with: email)
+        return predicate.evaluate(with: self)
     }
     
 }
