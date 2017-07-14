@@ -37,6 +37,14 @@ public class UserDefaultTools {
         userDefaults.set(value, forKey: key)
     }
     
+    public class func getStringValue(key : String) -> String?{
+        return userDefaults.string(forKey: key)
+    }
+    
+    public class func getStringArrayValue(key : String) -> [String]? {
+        return userDefaults.stringArray(forKey: key)
+    }
+    
     public class func getIntValue(key : String) -> Int {
         return userDefaults.integer(forKey: key)
     }
@@ -53,20 +61,20 @@ public class UserDefaultTools {
         return userDefaults.bool(forKey: key)
     }
     
-    public class func getArrayValue(key : String) -> [Any] {
-        return userDefaults.array(forKey: key)!
+    public class func getArrayValue(key : String) -> [Any]? {
+        return userDefaults.array(forKey: key)
     }
     
-    public class func getDataValue(key : String) -> Data {
-        return userDefaults.data(forKey: key)!
+    public class func getDataValue(key : String) -> Data? {
+        return userDefaults.data(forKey: key)
     }
     
-    public class func getDictValue(key : String) -> [String : Any] {
-        return userDefaults.dictionary(forKey: key)!
+    public class func getDictValue(key : String) -> [String : Any]? {
+        return userDefaults.dictionary(forKey: key)
     }
     
-    public class func getAnyValue(key : String) -> Any {
-        return userDefaults.object(forKey: key)!
+    public class func getAnyValue(key : String) -> Any? {
+        return userDefaults.object(forKey: key)
     }
     
     public class func removeObject(key : String) {
