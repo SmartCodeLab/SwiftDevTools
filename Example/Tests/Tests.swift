@@ -40,6 +40,14 @@ class Tests: XCTestCase {
 //        print(line.characters.split(separator: " ")
 //                                  .map(String.init))
         print(line.split(regex: " "))
+        
+        UserDefaultTools.putFloatValue(key: "key", value: 10.2)
+        print(UserDefaultTools.getFloatValue(key: "key"))
+        
+        print(SmartLogger.debugable)
+        SmartLogger.debugable = false
+        print(SmartLogger.debugable)
+//        SmartLogger.pLog(<#T##items: Any...##Any#>, separator: <#T##String#>, terminator: <#T##String#>)
     }
     
     func testPerformanceExample() {
